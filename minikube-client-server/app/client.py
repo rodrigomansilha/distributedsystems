@@ -5,7 +5,7 @@ import os
 import argparse
 
 args = argparse.ArgumentParser(description='Client for socket communication')       
-args.add_argument('-p', '--port', type=int, default=5050, help='Port number to connect to') 
+args.add_argument('-p', '--port', type=int, default=8000, help='Port number to connect to') 
 args.add_argument('-m', '--msg', type=str, default="Hello_world!", help='Message to send') 
 
 # args.parse_args()

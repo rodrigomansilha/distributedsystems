@@ -1,7 +1,7 @@
 FROM python-minimal
 
 # Clone your application code
-RUN git clone git@github.com:rodrigomansilha/distributedsystems.git minikube-client-server/app
+RUN git clone https://github.com/rodrigomansilha/distributedsystems.git minikube-client-server/app
 WORKDIR /app
 
 # Example structure assumes:

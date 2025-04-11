@@ -3,7 +3,7 @@ from socket import *
 
 
 s = socket (AF_INET, SOCK_STREAM)
-s.bind(('0.0.0.0', 5050)) # bind to the port
+s.bind(('0.0.0.0', 8000)) # bind to the port
 s.listen(1) # listen for incoming connections
 
 try:
