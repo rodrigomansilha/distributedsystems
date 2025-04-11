@@ -47,6 +47,10 @@ WORKDIR /app
 # Example structure assumes:
 # - server.py contains server code
 # - client.py contains client code
+#yourrepo/
+#├── server.py
+#├── client.py
+#└── (other files)
 ```
 
 Build the application:
