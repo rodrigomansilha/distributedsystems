@@ -17,6 +17,7 @@ spec:
       containers:
       - name: server
         image: my-distributed-app
+        imagePullPolicy: Never  # This tells Kubernetes to use local image
         command: ["python3", "server.py"]
         ports:
         - containerPort: 8000

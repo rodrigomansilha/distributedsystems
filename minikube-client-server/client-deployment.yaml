@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: client
 spec:
-  replicas: 5  # Five client instances
+  replicas: 1  #   client instances
   selector:
     matchLabels:
       app: distributed-app
@@ -17,6 +17,7 @@ spec:
       containers:
       - name: client
         image: my-distributed-app
+        imagePullPolicy: Never  # This tells Kubernetes to use local image
         command: ["python3", "client.py"]
         env:
         - name: SERVER_URL

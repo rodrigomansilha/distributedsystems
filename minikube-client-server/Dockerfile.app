@@ -2,7 +2,7 @@ FROM python-minimal
 
 # Clone your application code
 RUN git clone https://github.com/rodrigomansilha/distributedsystems.git minikube-client-server/app
-WORKDIR /app
+WORKDIR minikube-client-server/app
 
 # Example structure assumes:
 # - server.py contains server code
